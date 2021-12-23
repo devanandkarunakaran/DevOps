@@ -1,5 +1,4 @@
 SELECT * FROM SYSIBM.SYSPACKAGE                       
 WHERE LASTUSED >= DATE(DAYS(CURRENT DATE) - 5)        
 AND RELBOUND NOT IN ('P','Q','R')                     
-AND VALID <> 'N' AND OPERATIVE <> 'N'
-;               
+AND VALID <> 'N' AND OPERATIVE <> 'N';               
