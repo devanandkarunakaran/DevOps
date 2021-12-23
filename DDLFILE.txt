@@ -1,0 +1,23 @@
+--     SET CURRENT SQLID = 'IAUDXK';                                 
+     CREATE TABLE                                                    
+       FTS4DEV2.EMP                                                  
+        (                                                            
+        EMP_NAME   CHAR(15) NOT NULL WITH DEFAULT                    
+         FOR SBCS DATA                                               
+       ,EMP_REGION   CHAR(5) NOT NULL WITH DEFAULT                   
+         FOR SBCS DATA                                               
+       ,EMP_TYPE   CHAR(1) NOT NULL WITH DEFAULT                     
+         FOR SBCS DATA                                               
+       ,EMP_YRS_SERVICE   DECIMAL(9) NOT NULL WITH DEFAULT           
+       ,EMP_WAGES   CHAR(8) NOT NULL WITH DEFAULT                    
+         FOR SBCS DATA                                               
+       ,EMP_OT   CHAR(8) NOT NULL WITH DEFAULT                       
+         FOR SBCS DATA                                               
+       ,EMP_COMM   CHAR(8) NOT NULL WITH DEFAULT                       
+         FOR SBCS DATA                                                 
+        )                                                              
+         IN IAUDXKDB.EMPTS                                             
+         CCSID EBCDIC                                                  
+         NOT VOLATILE                                                  
+         APPEND NO                                                     
+     ;                                                                 
