@@ -1,4 +1,4 @@
---     SET CURRENT SQLID = 'IAUDXK'; 
+--     SET CURRENT SQLID = 'IAUDXK' ; 
      CREATE TABLE                                                    
        FTS4DEV2.EMP                                                  
         (                                                            
