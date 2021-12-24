@@ -14,7 +14,9 @@
        ,EMP_OT   CHAR(8) NOT NULL WITH DEFAULT                       
          FOR SBCS DATA                                               
        ,EMP_COMM   CHAR(8) NOT NULL WITH DEFAULT                       
-         FOR SBCS DATA                                                 
+         FOR SBCS DATA
+        ,EMP_TOTAL   CHAR(8) NOT NULL WITH DEFAULT        
+         FOR SBCS DATA                                   
         )                                                              
          IN IAUDXKDB.EMPTS                                             
          CCSID EBCDIC                                                  
