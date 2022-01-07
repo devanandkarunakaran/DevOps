@@ -20,6 +20,6 @@
         )                                                              
          IN IAUDXKDB.EMPTS                                             
          CCSID EBCDIC                                                  
-         NOT VOLATILE                                                  
+         VOLATILE                                                  
          APPEND NO                                                     
      ;                                                                 
