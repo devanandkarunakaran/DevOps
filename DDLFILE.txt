@@ -1,6 +1,6 @@
 --     SET CURRENT SQLID = 'IAUDXK' ; 
      CREATE TABLE                                                    
-       FTS4DEV2.EMP3                                                  
+       FTS4DEV2.EMP                                                  
         (                                                            
         EMP_NAME   CHAR(15) NOT NULL WITH DEFAULT                    
          FOR SBCS DATA                                               
