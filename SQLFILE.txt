@@ -4,7 +4,7 @@ AND RELBOUND NOT IN ('P','Q','R')
 AND VALID <> 'N' AND OPERATIVE <> 'N' 
 WITH UR
 ;
-SELECT * FROM IAUDXK.EMP                      
+SELECT * FROM FTS4DEV2.EMP                      
 WITH UR
 ;
 EXPLAIN STMTCACHE ALL     
