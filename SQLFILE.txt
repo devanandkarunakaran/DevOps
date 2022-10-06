@@ -1,7 +1,10 @@
 SELECT * FROM SYSIBM.SYSPACKAGE                       
 WHERE LASTUSED >= DATE(DAYS(CURRENT DATE) - 5)        
---AND RELBOUND NOT IN ('P','Q','R')                     
---AND VALID <> 'N' AND OPERATIVE <> 'N' 
+AND RELBOUND NOT IN ('P','Q','R')                     
+AND VALID <> 'N' AND OPERATIVE <> 'N' 
+WITH UR
+;
+SELECT * FROM IAUDXK.EMP                      
 WITH UR
 ;
 EXPLAIN STMTCACHE ALL     
