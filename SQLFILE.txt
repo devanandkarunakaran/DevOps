@@ -1,11 +1,6 @@
 SELECT * FROM SYSIBM.SYSPACKAGE                       
-WHERE LASTUSED >= DATE(DAYS(CURRENT DATE) - 4)        
+WHERE LASTUSED >= DATE(DAYS(CURRENT DATE) - 3)        
 AND RELBOUND NOT IN ('P','Q','R')                     
 WITH UR
 ;
-SELECT * FROM FTS4DEV2.EMP
-WHERE EMP_NAME Like 'DE%'
-WITH UR
-;
-EXPLAIN STMTCACHE ALL     
-;                         
+                       
