@@ -1,18 +1,6 @@
-SELECT CASE (RELBOUND)                                   
-            WHEN ' ' THEN 'DB2 V6 AND PRIOR'             
-            WHEN 'K' THEN 'DB2 V7'                       
-            WHEN 'L' THEN 'DB2 V8'                       
-            WHEN 'M' THEN 'DB2 V9'                       
-            WHEN 'N' THEN 'OTHER'                        
-            WHEN 'O' THEN 'DB2 V10'                      
-            WHEN 'P' THEN 'DB2V11'                       
-            WHEN 'Q' THEN 'DB2V12'                       
-                                                         
-       END AS DB2_VERSION                                
-      ,COUNT(*) AS NO_OF_PACKAGE                         
-FROM   SYSIBM.SYSPACKAGE                                 
-WHERE                                                    
-LASTUSED > '01.01.0001'                                  
-GROUP BY RELBOUND                                        
-WITH UR;                                                 
+SELECT RBA_FORMAT,COUNT(*)      
+FROM "SYSIBM".SYSTABLEPART      
+WHERE 1=1                       
+GROUP BY RBA_FORMAT             
+WITH UR;                                                                    
                        
