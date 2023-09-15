@@ -1,6 +1,6 @@
-SELECT RBA_FORMAT,COUNT(*)      
-FROM "SYSIBM".SYSTABLEPART      
-WHERE 1=1                       
-GROUP BY RBA_FORMAT             
-WITH UR;                                                                    
+SELECT CLOSERULE, COUNT(*)   
+FROM SYSIBM.SYSTABLESPACE    
+WHERE PARTITIONS = 0         
+GROUP BY CLOSERULE           
+WITH UR;                                                                                        
                        
