@@ -1,27 +1,51 @@
---     SET CURRENT SQLID = 'IAUDXK' ; 
-     CREATE TABLE                                                    
-       FTS4DEV2.EMP                                                  
-        (                                                            
-        EMP_NAME   CHAR(15) NOT NULL WITH DEFAULT                    
-         FOR SBCS DATA                                               
-       ,EMP_REGION   CHAR(5) NOT NULL WITH DEFAULT                   
-         FOR SBCS DATA                                               
-       ,EMP_TYPE   CHAR(1) NOT NULL WITH DEFAULT                     
-         FOR SBCS DATA                                               
-       ,EMP_YRS_SERVICE   DECIMAL(9) NOT NULL WITH DEFAULT           
-       ,EMP_WAGES   CHAR(8) NOT NULL WITH DEFAULT                    
-         FOR SBCS DATA                                               
-       ,EMP_OT   CHAR(8) NOT NULL WITH DEFAULT                       
-         FOR SBCS DATA                                               
-       ,EMP_COMM   CHAR(8) NOT NULL WITH DEFAULT  
+     CREATE TABLE
+       HAUNXG0.CUSTOMER_TABLE_KBANK
+        (
+        CUSTOMER_NUMBER   CHAR(6) NOT NULL WITH DEFAULT
          FOR SBCS DATA
-        ,EMP_TOTAL   CHAR(8) NOT NULL WITH DEFAULT        
-       FOR SBCS DATA         
---      ,TEST_COL1   CHAR(4) NOT NULL WITH DEFAULT        
---      FOR SBCS DATA         
-        )                                                              
-         IN IAUDXKDB.EMPTS                                             
-         CCSID EBCDIC                                                  
-         VOLATILE                                                  
-         APPEND NO                                                     
-     ;                                                                 
+       ,COMPANY_NAME   CHAR(30) NOT NULL WITH DEFAULT
+         FOR SBCS DATA
+       ,ADDRESS   CHAR(30) NOT NULL WITH DEFAULT
+         FOR SBCS DATA
+       ,CITY   CHAR(25) NOT NULL WITH DEFAULT
+         FOR SBCS DATA
+       ,STATE   CHAR(2) NOT NULL WITH DEFAULT
+         FOR SBCS DATA
+       ,ZIP_CODE   CHAR(9) NOT NULL WITH DEFAULT
+         FOR SBCS DATA
+       ,COUNTRY   CHAR(20) NOT NULL WITH DEFAULT
+         FOR SBCS DATA
+       ,AREA_CODE   CHAR(3) NOT NULL WITH DEFAULT
+         FOR SBCS DATA
+       ,TELEPHONE_NUM   CHAR(7) NOT NULL WITH DEFAULT
+         FOR SBCS DATA
+       ,CONTACT_NAME   CHAR(30) NOT NULL WITH DEFAULT
+         FOR SBCS DATA
+       ,CONTACT_TITLE   CHAR(30)
+         FOR SBCS DATA
+       ,CONTACT_ADDR   CHAR(30)
+         FOR SBCS DATA
+       ,CONTACT_CITY   CHAR(25)
+         FOR SBCS DATA
+       ,CONTACT_STATE   CHAR(2)
+         FOR SBCS DATA
+       ,CONTACT_ZIP   CHAR(9)
+         FOR SBCS DATA
+       ,CONTACT_COUNTRY   CHAR(10)
+         FOR SBCS DATA
+       ,CONTACT_AREA_CD   CHAR(3)
+         FOR SBCS DATA
+       ,CONTACT_TELEPHONE   CHAR(7)
+         FOR SBCS DATA
+        ,
+         CONSTRAINT CUSTOMER_NUMBER
+         PRIMARY KEY
+         (
+          CUSTOMER_NUMBER
+         )
+        )
+         IN HAUNXGDB.CUSTTS
+         CCSID EBCDIC
+         NOT VOLATILE
+         APPEND NO
+     ;
