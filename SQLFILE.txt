@@ -3,7 +3,7 @@
  FROM  IAUDXK.DSN_STATEMENT_CACHE_TABLE               
  WHERE LITERAL_REPL = ''                              
    AND   STAT_EXECB > 2                             
---   AND   CURSQLID = 'HAUPXB0'                       
+   AND   CURSQLID = 'IAUDXK'                       
 --  AND   STBLGRP LIKE 'DEV%'                        
 -- ORDER BY STAT_EXECB DESC
 ;                          
