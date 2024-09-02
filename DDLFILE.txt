@@ -17,8 +17,8 @@
          FOR SBCS DATA
         ,EMP_TOTAL   CHAR(8) NOT NULL WITH DEFAULT        
        FOR SBCS DATA         
-      ,TEST_COL1   CHAR(4) NOT NULL WITH DEFAULT        
-       FOR SBCS DATA         
+--      ,TEST_COL1   CHAR(4) NOT NULL WITH DEFAULT        
+--       FOR SBCS DATA         
         )                                                              
          IN IAUDXKDB.EMPTS                                             
          CCSID EBCDIC                                                  
