@@ -2,7 +2,7 @@
       STABILIZED, CURSQLID, STAT_CPU, STAT_ELAP       
  FROM  IAUDXK.DSN_STATEMENT_CACHE_TABLE               
  WHERE LITERAL_REPL = ''                              
---   AND   STAT_EXECB > 1                             
+  AND   STAT_EXECB > 1                             
    AND   CURSQLID = 'IAUDXK'                       
    AND   STBLGRP LIKE 'DEV%'                        
    ORDER BY STAT_EXECB DESC
